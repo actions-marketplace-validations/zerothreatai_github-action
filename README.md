@@ -1,6 +1,6 @@
-# Zero Threat AI Powered Security Scanner
+# ZeroThreat – AI-Powered Automated Penetration Testing Platform
 
-Secure your code proactively. Use the ZeroThreat AI Powered Web Application/API Security Scanner to perform Dynamic Application Security Testing (DAST). It enables comprehensive Dynamic Application Security Testing (DAST) to detect vulnerabilities, making findings readily available on the ZeroThreat Portal for review.
+ZeroThreat is an AI-powered automated penetration testing platform that uncovers real, exploitable vulnerabilities across modern web applications and APIs with proof-based validation and vulnerability coverage. It uses Agentic AI to execute adaptive attacker workflows, combining deep CVE coverage, authenticated testing, business logic testing, and community-driven attack templates to help teams prioritize real risk and eliminate false positives.
 
 ## Inputs
 
