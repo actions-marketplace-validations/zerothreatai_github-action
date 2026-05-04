@@ -13,7 +13,7 @@ ZeroThreat is an AI-powered automated penetration testing platform that uncovers
 
 ## How It Works
 
-1. **ZeroThreat AI Scanner**: The DAST scan is triggered by passing the `zt_token`. Each token corresponds to a specific target defined within the ZeroThreat application. Upon receiving the token, the ZeroThreat DevOps Bot executes prerequisite checks before commencing the scan process.
+1. **ZeroThreat AI-Powered Pentesting Tool**: The Pentesting is triggered by passing the `zt_token`. Each token corresponds to a specific target defined within the ZeroThreat application. Upon receiving the token, the ZeroThreat DevOps Bot executes prerequisite checks before commencing the scan process.
 2. **Scan Report**: As soon as the ZeroThreat DevOps Bot starts the security scan, The scan report will be available in the ZeroThreat Portal.
 
 ### Secrets Setup
