@@ -1,5 +1,5 @@
-name: "ZeroThreat AI DAST Scanner"
-description: "Scan for security issues in web applications/APIs"
+name: "ZeroThreat AI Pentest"
+description: "Find and validate real exploitable vulnerabilities in web apps and APIs."
 branding:
   icon: check-circle
   color: purple
