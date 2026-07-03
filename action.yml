@@ -7,15 +7,29 @@ inputs:
   ZT_TOKEN:
     description: 'ZT_TOKEN to authenticate API request & start the scan.'
     required: true
-  #Wait for analysis settings
   WAIT_FOR_ANALYSIS:
     description: 'Set this true to wait for analysis to complete before finishing job.'
     required: false
-    default: false
+    default: 'false'
   ON_PREM_PROXY_API_URL:
     description: 'Set proxy url host to scan internal targets.'
     required: false
     default: ''
+  POLL_INTERVAL_SECONDS:
+    description: 'How often (in seconds) to check scan status when WAIT_FOR_ANALYSIS is true.'
+    required: false
+    default: '300'
+  MAX_WAIT_MINUTES:
+    description: 'Maximum time (in minutes) to wait for the scan to complete before failing the job.'
+    required: false
+    default: '60'
+outputs:
+  scan-url:
+    description: 'URL to view the scan report in the ZeroThreat Portal.'
+  scan-code:
+    description: 'Unique identifier for the initiated scan.'
+  scan-status:
+    description: 'Final scan status code. Only set when WAIT_FOR_ANALYSIS is true and the scan completes.'
 runs:
-  using: 'node20'
+  using: 'node24'
   main: 'dist/index.js'

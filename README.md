@@ -4,11 +4,13 @@ ZeroThreat is an AI-powered automated penetration testing platform that uncovers
 
 ## Inputs
 
-| Input               | Description                                                          | Required | Default |
-| ------------------- | -------------------------------------------------------------------- | -------- | ------- |
-| `ZT_TOKEN`          | ZT_TOKEN to authenticate API request & start the scan.               | Yes      |         |
-| `WAIT_FOR_ANALYSIS` | Set this true to wait for analysis to complete before finishing job. | No       | false   |
-| `ON_PREM_PROXY_API_URL` | Set proxy url host to scan internal targets. | No       |    |
+| Input                       | Description                                                                          | Required | Default |
+| --------------------------- | ------------------------------------------------------------------------------------ | -------- | ------- |
+| `ZT_TOKEN`                  | ZT_TOKEN to authenticate API request & start the scan.                               | Yes      |         |
+| `WAIT_FOR_ANALYSIS`         | Set this true to wait for analysis to complete before finishing job.                 | No       | false   |
+| `ON_PREM_PROXY_API_URL`     | Set proxy url host to scan internal targets.                                         | No       | ''      |
+| `POLL_INTERVAL_SECONDS`     | How often (in seconds) to check scan status when WAIT_FOR_ANALYSIS is true.          | No       | 300     |
+| `MAX_WAIT_MINUTES`          | Maximum time (in minutes) to wait for the scan to complete before failing the job.   | No       | 60      |
 
 
 ## How It Works
