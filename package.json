@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=24.0.0"
+  },
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --outfile=dist/index.js --platform=node --format=cjs --minify"
+    "build": "esbuild src/index.ts --bundle --outfile=dist/index.js --platform=node --target=node24 --format=cjs --minify"
   },
   "repository": {
     "type": "git",
@@ -18,11 +21,13 @@
   "homepage": "https://github.com/zerothreatai/github-action#readme",
   "devDependencies": {
     "esbuild": "^0.25.2",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "@types/node": "^24.0.0"
   },
   "dependencies": {
-    "@actions/core": "^1.11.1",
-    "@actions/github": "^6.0.0",
-    "axios": "^1.8.4"
+    "@actions/core": "^1.11.1"
+  },
+  "allowScripts": {
+    "esbuild@0.25.2": true
   }
 }
